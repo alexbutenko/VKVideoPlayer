@@ -64,7 +64,7 @@ static NSUInteger kVideoQualities[4] = {240, 360, 480, 720};
     [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:self.videoScriptURL]
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-                               NSString *HTMLString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                               NSString *HTMLString = [[NSString alloc] initWithData:data encoding:NSWindowsCP1251StringEncoding];
                                NSArray *videoTags = [self videoTagsForHTMLString:HTMLString];
                                
                                NSScanner *scanner = [NSScanner scannerWithString:HTMLString];
