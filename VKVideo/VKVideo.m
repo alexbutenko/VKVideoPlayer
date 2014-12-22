@@ -55,7 +55,11 @@ static NSUInteger kVideoQualities[4] = {240, 360, 480, 720};
     return qualities;
 }
 
-//use the best available quality
+/**
+ *  Load PHP script to parse direct video URLs
+ *
+ *  @return best available video quality URL
+ */
 - (void)loadVideoURLWithCompletionHandler:(completion_block_t)completionBlock {
     [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:self.videoScriptURL]
                                        queue:[NSOperationQueue mainQueue]
