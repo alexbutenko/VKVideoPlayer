@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  VideosTableViewController.h
 //  VKVideo
 //
 //  Created by alexbutenko on 11/24/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface VideosTableViewController : UITableViewController
 
 
 @end

@@ -1,0 +1,1 @@
+../../../VK-ios-sdk/sdk/sdk/NSError+VKError.h

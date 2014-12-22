@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		52C97CE01A2310D100ED4F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C97CDF1A2310D100ED4F54 /* main.m */; };
 		52C97CE31A2310D100ED4F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C97CE21A2310D100ED4F54 /* AppDelegate.m */; };
-		52C97CE61A2310D100ED4F54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C97CE51A2310D100ED4F54 /* ViewController.m */; };
+		52C97CE61A2310D100ED4F54 /* VideosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C97CE51A2310D100ED4F54 /* VideosTableViewController.m */; };
 		52C97CE91A2310D100ED4F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C97CE71A2310D100ED4F54 /* Main.storyboard */; };
 		52C97CEB1A2310D100ED4F54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C97CEA1A2310D100ED4F54 /* Images.xcassets */; };
 		52C97CEE1A2310D100ED4F54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C97CEC1A2310D100ED4F54 /* LaunchScreen.xib */; };
 		52C97CFA1A2310D100ED4F54 /* VKVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C97CF91A2310D100ED4F54 /* VKVideoTests.m */; };
+		52C97D061A23196B00ED4F54 /* VKVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C97D051A23196B00ED4F54 /* VKVideo.m */; };
+		52C97D0B1A2320F200ED4F54 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C97D0A1A2320F200ED4F54 /* MediaPlayer.framework */; };
+		532AA9CA9C32ABA9CDB71C82 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F81CC4FD4FCD89B5D9691232 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +30,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A6C7528E1BFC5DFCA5C1814 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		52C97CDA1A2310D100ED4F54 /* VKVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C97CDE1A2310D100ED4F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52C97CDF1A2310D100ED4F54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52C97CE11A2310D100ED4F54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52C97CE21A2310D100ED4F54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		52C97CE41A2310D100ED4F54 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		52C97CE51A2310D100ED4F54 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52C97CE41A2310D100ED4F54 /* VideosTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideosTableViewController.h; sourceTree = "<group>"; };
+		52C97CE51A2310D100ED4F54 /* VideosTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideosTableViewController.m; sourceTree = "<group>"; };
 		52C97CE81A2310D100ED4F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52C97CEA1A2310D100ED4F54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		52C97CED1A2310D100ED4F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		52C97CF31A2310D100ED4F54 /* VKVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C97CF81A2310D100ED4F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52C97CF91A2310D100ED4F54 /* VKVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKVideoTests.m; sourceTree = "<group>"; };
+		52C97D041A23196B00ED4F54 /* VKVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKVideo.h; sourceTree = "<group>"; };
+		52C97D051A23196B00ED4F54 /* VKVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKVideo.m; sourceTree = "<group>"; };
+		52C97D0A1A2320F200ED4F54 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F43E4DEC7A475B51FB29A8D0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F81CC4FD4FCD89B5D9691232 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C97D0B1A2320F200ED4F54 /* MediaPlayer.framework in Frameworks */,
+				532AA9CA9C32ABA9CDB71C82 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F9E7D5BC6B801B25267FE9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52C97D0A1A2320F200ED4F54 /* MediaPlayer.framework */,
+				F81CC4FD4FCD89B5D9691232 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52C97CD11A2310D000ED4F54 = {
 			isa = PBXGroup;
 			children = (
 				52C97CDC1A2310D100ED4F54 /* VKVideo */,
 				52C97CF61A2310D100ED4F54 /* VKVideoTests */,
 				52C97CDB1A2310D100ED4F54 /* Products */,
+				BF20FB918F1E284A3B934536 /* Pods */,
+				2F9E7D5BC6B801B25267FE9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,12 +105,14 @@
 			children = (
 				52C97CE11A2310D100ED4F54 /* AppDelegate.h */,
 				52C97CE21A2310D100ED4F54 /* AppDelegate.m */,
-				52C97CE41A2310D100ED4F54 /* ViewController.h */,
-				52C97CE51A2310D100ED4F54 /* ViewController.m */,
+				52C97CE41A2310D100ED4F54 /* VideosTableViewController.h */,
+				52C97CE51A2310D100ED4F54 /* VideosTableViewController.m */,
 				52C97CE71A2310D100ED4F54 /* Main.storyboard */,
 				52C97CEA1A2310D100ED4F54 /* Images.xcassets */,
 				52C97CEC1A2310D100ED4F54 /* LaunchScreen.xib */,
 				52C97CDD1A2310D100ED4F54 /* Supporting Files */,
+				52C97D041A23196B00ED4F54 /* VKVideo.h */,
+				52C97D051A23196B00ED4F54 /* VKVideo.m */,
 			);
 			path = VKVideo;
 			sourceTree = "<group>";
@@ -119,6 +143,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BF20FB918F1E284A3B934536 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F43E4DEC7A475B51FB29A8D0 /* Pods.debug.xcconfig */,
+				4A6C7528E1BFC5DFCA5C1814 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C97CFD1A2310D100ED4F54 /* Build configuration list for PBXNativeTarget "VKVideo" */;
 			buildPhases = (
+				A58F70A32C48094AA0F322B9 /* Check Pods Manifest.lock */,
 				52C97CD61A2310D100ED4F54 /* Sources */,
 				52C97CD71A2310D100ED4F54 /* Frameworks */,
 				52C97CD81A2310D100ED4F54 /* Resources */,
+				35617577185D417AF22677EB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,12 +249,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35617577185D417AF22677EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A58F70A32C48094AA0F322B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52C97CD61A2310D100ED4F54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C97CE61A2310D100ED4F54 /* ViewController.m in Sources */,
+				52C97D061A23196B00ED4F54 /* VKVideo.m in Sources */,
+				52C97CE61A2310D100ED4F54 /* VideosTableViewController.m in Sources */,
 				52C97CE31A2310D100ED4F54 /* AppDelegate.m in Sources */,
 				52C97CE01A2310D100ED4F54 /* main.m in Sources */,
 			);
@@ -343,6 +412,7 @@
 		};
 		52C97CFE1A2310D100ED4F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F43E4DEC7A475B51FB29A8D0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VKVideo/Info.plist;
@@ -353,6 +423,7 @@
 		};
 		52C97CFF1A2310D100ED4F54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A6C7528E1BFC5DFCA5C1814 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VKVideo/Info.plist;
@@ -414,6 +485,7 @@
 				52C97CFF1A2310D100ED4F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52C97D001A2310D100ED4F54 /* Build configuration list for PBXNativeTarget "VKVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +494,7 @@
 				52C97D021A2310D100ED4F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
