@@ -15,6 +15,7 @@
 
 @property (nonatomic) NSArray *videos;
 @property (nonatomic) UIActivityIndicatorView *activityIndicatorView;
+@property (nonatomic) MPMoviePlayerViewController *mpvc;
 
 @end
 
@@ -125,19 +126,21 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    __weak typeof(self) weakSelf = self;
+    
     VKVideo *video = self.videos[indexPath.row];
     
     [video loadVideoURLWithCompletionHandler:^(NSURL *videoURL) {
-        MPMoviePlayerViewController *mpvc = [[MPMoviePlayerViewController alloc] init];
-        mpvc.moviePlayer.movieSourceType = MPMovieSourceTypeStreaming;
-        mpvc.moviePlayer.contentURL = videoURL;
+        weakSelf.mpvc = [[MPMoviePlayerViewController alloc] init];
+        weakSelf.mpvc.moviePlayer.movieSourceType = MPMovieSourceTypeStreaming;
+        weakSelf.mpvc.moviePlayer.contentURL = videoURL;
 
         // Remove the movie player view controller from the "playback did finish" notification observers
-        [[NSNotificationCenter defaultCenter] removeObserver:mpvc  name:MPMoviePlayerPlaybackDidFinishNotification object:mpvc.moviePlayer];
+        [[NSNotificationCenter defaultCenter] removeObserver:weakSelf.mpvc];
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(videoFinished:) name:MPMoviePlayerPlaybackDidFinishNotification object:mpvc.moviePlayer];
+                                                 selector:@selector(videoFinished:) name:MPMoviePlayerPlaybackDidFinishNotification object:weakSelf.mpvc.moviePlayer];
 
-        [self presentMoviePlayerViewControllerAnimated:mpvc];
+        [self presentMoviePlayerViewControllerAnimated:weakSelf.mpvc];
     }];
 }
 
